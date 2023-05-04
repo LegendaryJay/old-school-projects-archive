@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    margin: auto;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wrapper {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #fff;
+    display: flex;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.popup {
+    border-radius: 15px;
+    background-color: #fff;
+    width: 85%;
+    margin: 20px auto;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.title {
+  border-radius: 15px 15px 0 0;
+    display: flex;
+    background-color: #ac3973;
+    height: 100px;
+    top: 20px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    position:fixed;
+    width: inherit;
+    z-index: 1;
+}
+
+.body {
+    color: #000;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 0;
+    background: #ddd url('cow.png') no-repeat fixed center;
+    background-size: 200px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.inputDiv {
+    height: calc(50px);
+    width: inherit;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+.comp, .player {
+    margin: 13px 13px 0 13px;
+    font-size: 11px;
+    border-radius: 8px;
+    text-wrap: break-word;
+    padding: 10px;
+    resize: horizontal;
+    z-index: 1;
+    opacity: .9;
+    display: block;
+}
+
+.player {
+    background-color: #98e698;
+    text-align: right;
+    margin-left: 50px;
+    align-content: flex-end;
+}
+
+.comp {
+    background-color: #fff;
+    text-align: left;
+    margin-right: 50px;
+}
+
+#form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#guess {
+    margin: auto;
+    height: 80%;
+    width: 80%;
+    outline: none;
+    border: transparent;
+    text-align: center;
+}
+
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

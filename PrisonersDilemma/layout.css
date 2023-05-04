@@ -1,0 +1,171 @@
+/*General*/
+* {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+  color: #c697bd;
+}
+html,
+body {
+  height: 100%;
+}
+b {
+  color: #fff;
+}
+#myCanvas {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+/*Tables*/
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+
+/*Header*/
+.header {
+  display: table-row;
+  height: 1px;
+  background-color: #7a296a;
+}
+.header2 {
+  border-bottom: 1px solid #fff;
+}
+.header h1{
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #c697bd;
+  padding: 15px 50px;
+}
+
+/*Tabs*/
+.tab {
+    margin: 0;
+    padding: 10px 0px;
+    list-style-type: none;
+    overflow: hidden;
+    width: 80%;
+}
+
+/* per tab */
+.tab li {
+    margin: 0px 1.666%;
+    float: left;
+    box-sizing: border-box;
+    background-color: #300027;
+    width: 30%;
+    display: inline-block;
+    font-size: 17px; 
+}
+.tab li a {
+    text-decoration: none;
+    color: #c697bd;
+}
+
+/* on hover */
+.tab li:hover {
+    background-color: #c697bd;
+    cursor: pointer;
+}
+.tab li:hover a {
+    color: #300027;
+}
+
+/* on Focus */
+.tab li:focus, .tab li.active, .tab li.active:hover {
+    background-color: #9f5791;
+    cursor: default;
+}
+.tab li:focus a, .tab li.active a, .tab li.active:hover a {
+    color: #300027;
+    font-weight: bolder;
+}
+
+/*main*/
+.main {
+  height: 100%;
+  width: 70%;
+  display: table;
+  margin: 0px auto;
+  background-color: rgba(85,10,71, 0.985);
+  font-size: 14;
+  border-left: 2px solid #5B710D;
+  border-right: 2px solid #5B710D;
+  text-align: left;
+}
+.mainContents {
+  display: inline-block;
+  margin: 40px;
+
+}
+.tabcontent {
+    display: none;
+    color: #C697bd;
+    top: 200px;
+    text-overflow: ellipsis;
+    margin-left: 1.2em;
+    list-style: inside;
+    margin-left: 10px;
+    width: 100%;
+}
+.tabcontent ul{
+  margin-left: 20px;
+}
+.lessonDiv {
+  display: table;
+  width: 100%;
+  margin: auto;
+}
+/*Footer*/
+.footer { 
+    height: 0px;
+    font-size: 10px;
+    background-color: #300027;
+    color: #C697bd;
+    display: table-row;
+}
+.footer2 { 
+  bottom: 0px;
+  border-top: 1px solid #C697bd;
+}
+
+/*Junk*/
+.sides {
+  display: inline-block;
+}
+
+/*Charts*/
+.CanvasContainer {
+  position: relative;
+  padding: 1px;
+  width: 100%;
+}
+.Canvases {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#Example2 {
+  z-index: 0;
+}
+#Example2L2 {
+  z-index: 1;
+  opacity: 0.5;
+}
+
+/*Other*/
+#Scenario, #Scenario2 {
+  padding-left: 0px;
+  font-size: 12px;
+}

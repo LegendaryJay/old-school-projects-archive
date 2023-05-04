@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<html>
+	<div class="wrapper">
+		<div class="header">
+			<div class="header2">
+				<h1>Prisoner's Dilemma</h1>
+				<div align="center">
+					<ul class="tab">
+						<li id="Lesson" class="tablinks active"><a>Lesson</a></li>
+						<li id="Concepts" class="tablinks"><a>Concepts</a></li>
+						<li id="Conclusion" class="tablinks"><a>Conclusion</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<canvas id="myCanvas"></canvas>
+		<div class="main">
+			<div class="sides"></div>
+			<div class="mainContents">
+				<div id="LessonX" class="tabcontent">
+					<div class= lessonDiv>
+						<h3>What is the prisoner's dilemma?</h3>
+						<p>Imagine two poorly named brothers, A and B, have been arrested for a minor crime although the cops think they have done something much greater. 
+						To get a confession, the cops seperate A and B and give them both a choice- defect by ratting on the other, or cooperate by staying silent. The details go something like this- </p>
+						<br/>
+						<ul>
+							<li>If A <b>defects</b> (rats) while B <b>cooperates</b> (silence)
+								<ul><li>A goes <b>free</b></li>
+								<li>B serves <b>10 years</b></li></ul>
+							</li>
+							<li>If A <b>cooperates</b> (silence) while B <b>defects</b> (rats)
+								<ul><li>A serves <b>10 years</b></li>
+								<li>B goes <b>free</b></li></ul>
+							</li>
+							<li>If both <b>cooperate</b> (silence)
+								<ul><li>They both serve only <b>1 year</b></li></ul>
+							</li>
+							<li>If both <b>defect</b> (rat)
+								<ul><li>They both serve <b>3 years</b></li></ul>
+							</li>
+						</ul>
+						<br>What should A and B do?<br><br>
+						<div class="CanvasContainer">
+							<canvas class='Canvases' id="Example"></canvas>
+						</div>
+					</div>
+				</div>
+				<div id="ConceptsX" class="tabcontent">
+					<h3>Which to chose?</h3>
+					<p>From the perpective of the individual:</p>
+					<td style="width:15px">
+						<select class="options" id="A">
+							<option value="Empty">---</option>
+							<option value="Cooperate">Cooperate</option>
+						  	<option value="Defect">Defect</option>
+						</select>
+						<p id="Scenario"></p>
+					</td>
+					<br>
+					From the perception of the group: <br>
+					<select class="options" id="B">
+						<option value="Empty">---</option>
+						<option value="Cooperate">Both Cooperate</option>
+					  	<option value="Defect">Both Defect</option>
+					  	<option value="Mix">One Each</option>
+					</select>
+					<p id="Scenario2"></p>
+					<br>
+					<div class="CanvasContainer">
+						<canvas class='Canvases' id="Example2"></canvas><canvas class='Canvases' id="Example2L2"></canvas>
+					</div>
+				</div>
+				<div id="ConclusionX" class="tabcontent">
+				  	<h3>So what does it all mean?</h3>
+				  	<p>The point of this thought expirement is to explain why cooperation might be advantageous when defecting often gives more reward. For creatures that hang out alone- being selfish is extremely advantageous. When it comes to creatures that group together, kindness and cooperation- or altruism- might be more rewarding. <br><br><h3>Closing Thoughts</h3>The idea of altruism becomes much more complex when you realize that purely cooperative groups will always be taken advantage of by defectors. More on that in project 3- it's 10pm on a sunday and i have java homework due in two hours.</p>
+				</div>
+			</div>
+			<div class="sides"></div>
+		</div>
+		<div class="footer">
+			<div class="footer2" align="center">
+				Written by Daniel Chianese | October 1, 2016
+			</div>
+		</div>
+	</div>
+
+	 <script src="layout2.js"></script>
+</html>

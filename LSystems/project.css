@@ -1,0 +1,20 @@
+#controlPannel {
+  width: 100%;
+  background-color: green;
+  position: fixed;
+  bottom: 0px;
+  font-size: 11px;
+  box-sizing: border-box;
+  height: 120px;
+}
+html, body {
+  margin: 0;
+  padding: 0px;
+}
+#header{
+  height: 50px;
+
+}
+h1 {
+  color: rgb(255);
+}

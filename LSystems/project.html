@@ -1,0 +1,85 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="project.css">
+<script src="jquery-3.1.1.min.js"></script>
+<script src="libraries/p5.min.js"></script>
+<script src="libraries/p5.dom.min.js"></script>
+
+<html>
+<div id="header">
+  <center>
+    <h1>L-Systems!</h1>
+  </center>
+</div>
+<div id="controlPannel">
+  <center>
+
+
+    <form id="form">
+        <table id="table">
+            <tr>
+                <th>
+                    Start:
+                </th>
+                <th colspan="2">
+                    <input id="start" type="text" value="A" />
+                </th>
+                <th>
+                    Gen:
+                </th>
+                <th colspan="2">
+                    <input id="slide" type="range" min="0" max="10" step="1" value="0" onchange="generateTree()">
+                </th>
+                <th rowspan="4">
+                  <input type="submit" value="Submit">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    A →
+                </th>
+                <th colspan="2">
+                    <input id="rule1" type="text" value="B-A-B" />
+                </th>
+                <th>
+                    Line Length:
+                </th>
+                <th colspan="2">
+                    <input id="scale" type="range" min="1" max="10" step="1/32" value="10" onchange="generateTree()">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    B →
+                </th>
+                <th colspan="2">
+                    <input id="rule2" type="text" value="A+B+A" />
+                </th>
+                <th>
+                    Vert. Offset:
+                </th>
+                <th colspan="2">
+                    <input id="vOff" type="range" min="-100" max="100" step="1" value="0" onchange="generateTree()">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Angle:
+                </th>
+                <th colspan="2">
+                    <input type="number" id="angle" min="0" max="90" onchange="generateTree()" value="60"><br />
+                </th>
+                <th>
+                    Hor. Offset:
+                </th>
+                <th colspan="2">
+                    <input id="hOff" type="range" min="-100" max="100" step="1" value="0" onchange="generateTree()">
+                </th>
+            </tr>
+        </table>
+    </form>
+    </center>
+</div>
+
+
+</html>
+<script src="project.js"></script>
